@@ -1,0 +1,112 @@
+.pokemons-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.normal {background-color: var(--normal);}
+
+.grass {background-color: var(--grass);}
+
+.fire {background-color: var(--fire);}
+
+.water {background-color: var(--water);}
+
+.electric {background-color: var(--electric);}
+
+.ice {background-color: var(--ice);}
+
+.ground {background-color: var(--ground);}
+
+.flying {background-color: var(--flying);}
+
+.poison {background-color: var(--poison);}
+
+.fighting {background-color: var(--fighting);}
+
+.psychic {background-color: var(--psychic);}
+
+.dark {background-color: var(--dark);}
+
+.rock {background-color: var(--rock);}
+
+.bug {background-color: var(--bug);}
+
+.ghost {background-color: var(--ghost);}
+
+.steel {background-color: var(--steel);}
+
+.dragon {background-color: var(--dragon);}
+
+.fairy {background-color: var(--fairy);}
+
+.pokemon-list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: var(--text);
+  border-radius: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.pokemon-list-item .pokemon-number {
+  text-align: right;
+  opacity: 0.5;
+  font-size: 0.875rem;
+}
+
+.pokemon-list-item .pokemon-name {
+  text-transform: capitalize;
+}
+
+.pokemon-details {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pokemon-details .pokemon-types-list .type-item {
+  font-size: .75rem;
+  text-align: center;
+  border-radius: 1rem;
+  padding: 0.25rem 0.5rem;
+  margin-bottom: 0.5rem;
+  filter: brightness(1.1);
+}
+
+.pokemon-details img {height: 80px;}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+.pagination .btn-load {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+  color: var(--text);
+  background-color: var(--accent);
+}
+
+.pagination .btn-load:hover {background-color: var(--darkness);}
+
+/* ====== media queries ====== */
+@media screen and (min-width: 380px) {
+  .pokemons-list {grid-template-columns: 1fr 1fr;}
+}
+
+@media screen and (min-width: 576px) {
+  .pokemons-list {grid-template-columns: 1fr 1fr 1fr;}
+}
+
+@media screen and (min-width: 992px) {
+  .pokemons-list {grid-template-columns: 1fr 1fr 1fr 1fr;}
+  .pokemon-details img {height: 110px;}
+}

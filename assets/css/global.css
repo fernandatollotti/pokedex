@@ -1,0 +1,39 @@
+/* ====== reset ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {list-style: none;}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+dialog {border: none;}
+
+span {display: block;}
+
+/* ====== config ====== */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+}
+
+h2 {margin-bottom: 1.5rem;}
+
+img {max-width: 100%;}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.title {
+  color: var(--title);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--darkness);
+}
